@@ -1,0 +1,18 @@
+[SGE]
+## location of qstat binary
+qsub_bin = /usr/bin/qsub
+## location of qstat binary
+qstat_bin = /usr/bin/qstat
+## name of target q
+qname = all.q
+## sometimes commands rely on other temporary files 
+## in this case we can't use /tmp. Set this to the 
+## location to place these files, where all compute 
+## nodes have access
+qscratch = 
+## How often to poll the q in seconds to see if a step has finished.
+qpoll_time = 5
+## note that if not set then will default to user env setting
+shell_path = /bin/bash 
+## after submission whether to keep tmp files (useful for debugging)
+keep_tmp_files = 0
